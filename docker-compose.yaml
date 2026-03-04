@@ -50,32 +50,7 @@ services:
     environment:
     - NEO4J_AUTH=neo4j/aluno123
     - NEO4J_dbms_memory_heap_max__size=512m
-
-  #cassandra:
-    #image: cassandra:latest
-    #container_name: cassandra_container
-    #ports:
-     # - "9042:9042"
-    #volumes:
-     # - cassandra_data:/var/lib/cassandra
-
-    #environment:
-     # - CASSANDRA_CLUSTER_NAME=AulaCluster
-      #- CASSANDRA_DC=datacenter1
-      #- CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
-      #- MAX_HEAD_SIZE=1024M
-      #- HEAP_NEWSIZE=256M
-      #- HEAP_SIZE=1G
-    #healthcheck:
-      #test: ["CMD-SHELL", "[ $$(nodetool statusgossip) = running ] || exit 1]"]
-      #interval: 30s
-      #timeout: 10s
-      #retries: 5    
-    #networks:
-      #- mba_aula_nosql
-
-      
-
+  
 volumes:
   redis_data:
   mongo_data:

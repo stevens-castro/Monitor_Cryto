@@ -74,6 +74,8 @@ services:
     #networks:
       #- mba_aula_nosql
 
+      
+
 volumes:
   redis_data:
   mongo_data:

@@ -115,9 +115,9 @@ try:
             PRIMARY KEY (simbolo, data_hora)
         ) WITH CLUSTERING ORDER BY (data_hora DESC)
     """)
-    print("[SETUP] Cassandra configurado com sucesso.")
+    print("[SETUP] ScyllaDB configurado com sucesso.")
 except Exception as e:
-    print(f"[ERRO SETUP] Falha ao configurar Cassandra: {e}")
+    print(f"[ERRO SETUP] Falha ao configurar ScyllaDB: {e}")
 
 # --- Setup Neo4j ---
 def setup_neo4j(tx):

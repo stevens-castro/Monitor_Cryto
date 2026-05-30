@@ -34,7 +34,7 @@ para ignorar as bibliotecas C, pois no windows não temos suportes para drivers 
 
     * Para Cassandra = pip install cassandra-driver --no-binary cassandra-driver**
 
-OBS: Tente não instalar as bibliotecas do Scylla e cassadra no juntas no mesmo ambiete. POde gerar conflito pois as duas usam o mesmo namespace.
+OBS: Tente não instalar as bibliotecas do Scylla e cassadra no juntas no mesmo ambiente. Pode gerar conflito pois as duas usam o mesmo namespace.
 
 ### **Executando o monitor de cryto moeda**
   * 1 - Abra o aplicativo do docker no seu windows
